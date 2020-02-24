@@ -46,20 +46,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  min-width: 320px; }
+
 .mainheader {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
-  background-color: pink; }
+  height: 5rem;
+  background-color: #d3bbaf; }
   .mainheader .social-icons {
     position: absolute;
     left: 0;
     margin-left: 20px; }
   .mainheader .maintitle {
-    width: 155px;
-    height: 20px;
+    width: 9.6875rem;
+    height: 1.25rem;
     font-family: 'Open-Sans';
     text-decoration: none;
     color: #fff;
@@ -72,8 +75,36 @@ table {
     margin-left: 20px;
     height: 60px;
     width: 60px;
-    background-color: pink;
+    background-color: #d3bbaf;
     border: none;
     right: 0; }
+
+.content {
+  height: 21.875rem;
+  background-color: #fff0d2;
+  padding: 1.875rem 0; }
+  .content__title {
+    font-family: 'Roboto', 'Open-Sans';
+    font-size: 1.5rem;
+    padding: 0 1.25rem;
+    text-align: center;
+    margin-bottom: 1.25rem; }
+  .content__subtitle {
+    padding: 0 1.25rem;
+    text-align: center;
+    font-family: 'Roboto';
+    margin-bottom: 1.875rem; }
+  .content .form {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto'; }
+    .content .form input {
+      height: 3.75rem;
+      width: 14rem;
+      font-family: 'Roboto'; }
+    .content .form button {
+      width: 3.75rem;
+      height: 3.75rem; }
 
 /*# sourceMappingURL=../../sass/sourcemap/style.css.map */

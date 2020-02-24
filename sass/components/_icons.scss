@@ -1,0 +1,54 @@
+$icons: (
+  twitter: (
+    "ico": "\f099",
+    "color": #55acee,
+  ),
+  facebook: (
+    "ico": "\f09a",
+    "color": #3b5998,
+  ),
+  github: (
+    "ico": "\f09b",
+    "color": #231f20,
+  ),
+);
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  li + li {
+    margin-left: 1rem;
+  }
+  
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0;
+    
+    &::before {
+      font-family: 'FontAwesome';
+      font-size: 1.5rem;
+    }
+    @each $social, $icon in $icons {
+      &[href*="#{$social}"] {
+        background-color: map-get($icon, color);
+        &::before {
+          content: map-get($icon, ico)
+        }
+      }
+    }
+  }
+}
