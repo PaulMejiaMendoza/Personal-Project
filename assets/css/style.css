@@ -47,7 +47,8 @@ table {
   border-spacing: 0; }
 
 body {
-  min-width: 320px; }
+  min-width: 320px;
+  height: 100%; }
 
 .mainheader {
   position: relative;
@@ -80,9 +81,10 @@ body {
     right: 0; }
 
 .content {
-  height: 21.875rem;
+  position: relative;
+  max-height: 22rem;
   background-color: #fff0d2;
-  padding: 1.875rem 0; }
+  margin: 1.875rem 0; }
   .content__title {
     font-family: 'Roboto', 'Open-Sans';
     font-size: 1.5rem;
@@ -106,5 +108,24 @@ body {
     .content .form button {
       width: 3.75rem;
       height: 3.75rem; }
+  .content .poptreatments {
+    margin: 5rem 1.25rem 0 1.25rem;
+    font-family: 'Open-Sans'; }
+    .content .poptreatments__subtitle {
+      font-weight: 600;
+      height: 60px;
+      text-align: center; }
+    .content .poptreatments .grid {
+      min-height: 31rem;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      background-color: #fff;
+      grid-gap: 10px; }
+      .content .poptreatments .grid .item {
+        text-align: center;
+        line-height: 10rem;
+        font-size: 2rem;
+        background-color: papayawhip; }
 
 /*# sourceMappingURL=../../sass/sourcemap/style.css.map */
