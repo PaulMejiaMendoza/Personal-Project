@@ -1,3 +1,6 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css";
+
+
 $icons: (
   twitter: (
     "ico": "\f099",
@@ -7,32 +10,27 @@ $icons: (
     "ico": "\f09a",
     "color": #3b5998,
   ),
-  github: (
-    "ico": "\f09b",
-    "color": #231f20,
+  instagram: (
+    "ico": "\f16d",
+    "color": #E65C34,
   ),
 );
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
+
 
 .social-icons {
   display: flex;
   justify-content: center;
   li + li {
-    margin-left: 1rem;
+    margin-left: rem(5px);
   }
   
   a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     color: #fff;
     text-decoration: none;
@@ -40,7 +38,7 @@ body {
     
     &::before {
       font-family: 'FontAwesome';
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
     @each $social, $icon in $icons {
       &[href*="#{$social}"] {

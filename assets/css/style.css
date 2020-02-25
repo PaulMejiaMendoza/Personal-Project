@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,700,900&display=swap");
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css";
 *, *::before, *::after {
   box-sizing: border-box; }
 
@@ -50,40 +51,110 @@ body {
   min-width: 320px;
   height: 100%; }
 
-.mainheader {
-  position: relative;
+.mainnav {
+  height: 5rem;
+  background-color: #1e2847;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 5rem;
-  background-color: #d3bbaf; }
-  .mainheader .social-icons {
+  align-items: center; }
+  .mainnav__ghostitle {
+    display: none; }
+  .mainnav .social-icons {
     position: absolute;
     left: 0;
     margin-left: 20px; }
-  .mainheader .maintitle {
-    width: 9.6875rem;
+  .mainnav__title {
+    width: 7.1875rem;
     height: 1.25rem;
-    font-family: 'Open-Sans';
+    margin: auto;
+    border: none;
+    font-family: 'Roboto';
     text-decoration: none;
+    background-color: #1e2847;
     color: #fff;
     text-align: center;
+    justify-items: center;
     line-height: 1rem;
     font-size: 1.5rem;
-    font-weight: bold; }
-  .mainheader .btn__menu {
+    font-weight: bold;
+    cursor: pointer; }
+  .mainnav__links {
     position: absolute;
-    margin-left: 20px;
-    height: 60px;
-    width: 60px;
-    background-color: #d3bbaf;
-    border: none;
-    right: 0; }
+    display: flex;
+    list-style: none;
+    width: 30%;
+    height: 100%;
+    right: 0;
+    margin-right: 3.125rem;
+    align-items: center;
+    justify-content: center; }
+    .mainnav__links li + li {
+      margin-left: 0.625rem; }
+    .mainnav__links li, .mainnav__links a {
+      color: white;
+      text-decoration: none;
+      font-family: 'Roboto';
+      font-size: 1rem; }
+
+@media screen and (max-width: 768px) {
+  .mainnav {
+    justify-items: center; }
+    .mainnav__ghostitle {
+      display: inline-block;
+      width: 7.1875rem;
+      height: 1.25rem;
+      margin-left: 40px;
+      border: none;
+      font-family: 'Roboto';
+      text-decoration: none;
+      background-color: #1e2847;
+      color: #fff;
+      line-height: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer; }
+    .mainnav__title {
+      display: none; }
+    .mainnav .mainnav__links {
+      display: none; }
+    .mainnav .social-icons {
+      margin-left: 0.625rem; } }
+
+.social-icons {
+  display: flex;
+  justify-content: center; }
+  .social-icons li + li {
+    margin-left: 0.3125rem; }
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0; }
+    .social-icons a::before {
+      font-family: 'FontAwesome';
+      font-size: 1rem; }
+    .social-icons a[href*="twitter"] {
+      background-color: #55acee; }
+      .social-icons a[href*="twitter"]::before {
+        content: ""; }
+    .social-icons a[href*="facebook"] {
+      background-color: #3b5998; }
+      .social-icons a[href*="facebook"]::before {
+        content: ""; }
+    .social-icons a[href*="instagram"] {
+      background-color: #E65C34; }
+      .social-icons a[href*="instagram"]::before {
+        content: ""; }
 
 .content {
   position: relative;
   max-height: 22rem;
-  background-color: #fff0d2;
+  background-color: #d3bbaf;
   margin: 1.875rem 0; }
   .content__title {
     font-family: 'Roboto', 'Open-Sans';
