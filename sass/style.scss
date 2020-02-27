@@ -1,4 +1,5 @@
 //core------------------------
+@import "mixins/rem";
 @import "global/variables";
 
 
@@ -6,10 +7,10 @@
 //-------------------------------
 @import "global/reset";
 @import "global/base";
-@import "mixins/rem";
 
 //Fonts
 //-------------------------------------
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,700,900&display=swap");
 
 
@@ -19,4 +20,7 @@
 @import "components/navbar";
 @import "components/icons";
 @import "components/main";
+@import "components/mainnav__title";
+@import "components/mainnav__links";
+@import "components/mainnav__ghostitle";
    

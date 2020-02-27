@@ -1,0 +1,21 @@
+.mainnav__links {
+  position: absolute;
+  list-style: none;
+  width: 30%;
+  height: 100%;
+  right: 0;
+  margin-right: rem(50px);
+  align-items: center;
+  justify-content: center;
+
+  li + li {
+    margin-left: rem(10px);
+  }
+
+  li, a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 1rem;
+  }
+}
