@@ -118,54 +118,6 @@ body {
       .social-icons a[href*="instagram"]::before {
         content: ""; }
 
-.content {
-  position: relative;
-  max-height: 22rem;
-  background-color: #d3bbaf;
-  padding: 1.875rem 0; }
-  .content__title {
-    font-family: 'Roboto', 'Open-Sans';
-    font-size: 1.5rem;
-    padding: 0 1.25rem;
-    text-align: center;
-    margin-bottom: 1.25rem; }
-  .content__subtitle {
-    padding: 0 1.25rem;
-    text-align: center;
-    font-family: 'Roboto';
-    margin-bottom: 1.875rem; }
-  .content .form {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Roboto'; }
-    .content .form input {
-      height: 3.75rem;
-      width: 14rem;
-      font-family: 'Roboto'; }
-    .content .form button {
-      width: 3.75rem;
-      height: 3.75rem; }
-  .content .poptreatments {
-    margin: 5rem 1.25rem 0 1.25rem;
-    font-family: 'Open-Sans'; }
-    .content .poptreatments__subtitle {
-      font-weight: 600;
-      height: 60px;
-      text-align: center; }
-    .content .poptreatments .grid {
-      min-height: 31rem;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-      background-color: #fff;
-      grid-gap: 10px; }
-      .content .poptreatments .grid .item {
-        text-align: center;
-        line-height: 10rem;
-        font-size: 2rem;
-        background-color: papayawhip; }
-
 .mainnav__title {
   width: 7.1875rem;
   height: 1.25rem;
@@ -209,5 +161,79 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer; }
+
+.search {
+  position: relative;
+  max-height: 24.375rem;
+  background-color: #d3bbaf;
+  padding: 1.875rem 0; }
+  .search__title {
+    font-family: 'Roboto', 'Open-Sans';
+    font-size: 1.5rem;
+    padding: 0 1.25rem;
+    text-align: center;
+    margin-bottom: 1.25rem; }
+  .search__subtitle {
+    padding: 0 1.25rem;
+    text-align: center;
+    font-family: 'Roboto';
+    margin-bottom: 1.875rem; }
+  .search .form {
+    display: inline-block;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto'; }
+    .search .form label {
+      height: 3.75rem;
+      width: 13.4375rem;
+      text-align: center;
+      line-height: 4rem; }
+    .search .form input {
+      height: 3.75rem;
+      width: 12.8125rem;
+      font-family: 'Roboto';
+      font-size: 1.125rem;
+      text-align: center;
+      border: 2px solid #fc4c4F;
+      border-radius: 3.125rem 0 0 3.125rem;
+      padding: 0 1.5625rem; }
+    .search .form button {
+      width: 3.75rem;
+      height: 3.75rem;
+      background-color: #fc4c4F;
+      border: none;
+      font-family: 'Roboto';
+      font-size: 1rem;
+      border-radius: 0 3.125rem 3.125rem 0;
+      color: #fff; }
+      .search .form button:hover {
+        color: #1e2847; }
+
+.poptreatments {
+  max-height: 37.5rem;
+  padding: 1.25rem 1.25rem;
+  font-family: 'Roboto';
+  font-size: 20px; }
+  .poptreatments__subtitle {
+    font-weight: 600;
+    height: 60px;
+    text-align: center;
+    line-height: 3.5rem; }
+  .poptreatments .grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    background-color: #fff;
+    grid-gap: 10px; }
+    .poptreatments .grid .item {
+      text-align: center;
+      line-height: 10rem;
+      font-size: 2rem;
+      background-color: papayawhip; }
+
+@media screen and (min-width: 768px) {
+  .poptreatments {
+    height: 25rem; } }
 
 /*# sourceMappingURL=../../sass/sourcemap/style.css.map */

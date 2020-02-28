@@ -1,0 +1,59 @@
+.search {
+  position: relative;
+  max-height: rem(390px);
+  background-color: #d3bbaf;
+  padding: rem(30px) 0;
+
+  &__title {
+    font-family: 'Roboto', 'Open-Sans';
+    font-size: 1.5rem;
+    padding: 0 rem(20px);
+    text-align: center;
+    margin-bottom: rem(20px);
+  }
+  &__subtitle {
+    padding: 0 rem(20px);
+    text-align: center;
+    font-family: 'Roboto';
+    margin-bottom: rem(30px);
+  }
+  .form {
+    display: inline-block;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto';
+
+    label{
+      height: rem(60px);
+      width: rem(215px);
+      text-align: center;
+      line-height: 4rem;
+    }
+    
+    input {
+      height: rem(60px);
+      width: rem(205px);
+      font-family: 'Roboto';
+      font-size: rem(18px);
+      text-align: center;
+      border: 2px solid #fc4c4F;
+      border-radius: rem(50px 0 0 50px);
+      padding: rem(0 25px);
+    }
+    button {
+      width: rem(60px);
+      height: rem(60px);
+      background-color: #fc4c4F;
+      border: none;
+      font-family: 'Roboto';
+      font-size: 1rem;
+      border-radius: rem(0 50px 50px 0);
+      color: #fff;
+
+      &:hover{
+        color: #1e2847;
+      }
+    }
+  }
+}

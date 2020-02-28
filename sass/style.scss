@@ -17,10 +17,11 @@
 
 //components
 //--------------------
-@import "components/navbar";
-@import "components/icons";
-@import "components/main";
-@import "components/mainnav__title";
-@import "components/mainnav__links";
-@import "components/mainnav__ghostitle";
+@import "components/navbar/navbar";
+@import "components/navbar/icons";
+@import "components/navbar/mainnav__title";
+@import "components/navbar/mainnav__links";
+@import "components/navbar/mainnav__ghostitle";
+@import "components/section-input/main";
+@import "components/section-treatments/poptreatments";
    
