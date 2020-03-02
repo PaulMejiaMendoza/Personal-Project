@@ -236,10 +236,6 @@ body {
     .poptreatments .grid--item1 {
       display: block; }
 
-@media screen and (min-width: 768px) {
-  .poptreatments {
-    height: 25rem; } }
-
 .footer {
   height: auto;
   background-color: #1e2847;
@@ -264,5 +260,33 @@ body {
     color: #fff;
     font-family: 'Roboto';
     text-align: center; }
+
+.visual {
+  padding: 1.25rem; }
+
+.content {
+  color: #1e2847;
+  background-color: #d3bbaf;
+  height: auto;
+  font-family: 'Roboto';
+  padding: 1.25rem;
+  text-align: center; }
+  .content__h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem; }
+  .content__h2 {
+    font-size: 1rem; }
+
+.services {
+  display: grid;
+  height: auto;
+  padding: 1.25rem;
+  width: auto;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.625rem; }
+  .services__title {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 1rem; }
 
 /*# sourceMappingURL=../../sass/sourcemap/style.css.map */

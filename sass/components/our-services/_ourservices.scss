@@ -1,0 +1,36 @@
+.visual {
+    padding: rem(20px);
+}
+
+.content{
+    color: #1e2847;
+    background-color: #d3bbaf;
+    height: auto;
+    font-family: 'Roboto';
+    padding: rem(20px);
+    text-align: center;
+
+    &__h1{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    
+    &__h2{
+        font-size: 1rem;
+    }
+}
+
+.services {
+    display: grid;
+    height: auto;
+    padding: rem(20px);
+    width: auto;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: rem(10px);
+
+    &__title{
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: 1rem;
+    }
+}
