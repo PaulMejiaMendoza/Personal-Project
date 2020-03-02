@@ -1,4 +1,4 @@
 # Personal-Project
 Stetic.mi
 
-![img project](https://user-images.githubusercontent.com/54085516/75123205-b5541300-56a5-11ea-85c8-93ff87eb7042.PNG)
+![Captura](https://user-images.githubusercontent.com/54085516/75709274-a59a8700-5cc2-11ea-951d-75d1b81c80b8.PNG)

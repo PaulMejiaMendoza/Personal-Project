@@ -243,7 +243,8 @@ body {
 .footer {
   height: auto;
   background-color: #1e2847;
-  padding: 1.25rem; }
+  padding: 1.25rem;
+  font-family: 'Roboto'; }
   .footer .support {
     margin-bottom: 1.25rem; }
     .footer .support .link {
