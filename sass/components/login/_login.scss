@@ -1,0 +1,65 @@
+.form {
+    display: block;
+    padding: rem(20px);
+    height: auto;
+    font-family: 'Roboto';
+    font-size: 1rem;
+
+    &__title{
+        text-align: center;
+        padding-bottom: rem(40px);
+    }
+
+    &__label{
+        margin-right: rem(10px);
+        margin-left: rem(10px)
+    }
+
+    &__input {
+        width: min($numbers: rem(200px));
+        height: rem(60px);
+        margin: rem(10px);
+    }
+
+    .input--email{
+        width: min($numbers: rem(250px));
+    }
+}
+
+
+    //     display: inline-block;
+    //     height: auto;
+    //     flex-shrink: 1;
+    //     padding-top: rem(40px);
+
+    //     label, input {
+    //         margin-bottom:rem(20px) ;
+    //         margin-right: min(rem(20px));
+    //         font-family: 'Roboto';
+    //         font-size: 1rem;
+    //     }
+
+    //     input{
+    //         width: auto;
+    //         height: rem(60px);
+    //         padding: rem(0 10px);
+    //     }
+    // }
+
+    // .email{
+    //     display: inline-block;
+    //     height: auto;
+
+    //     label, input {
+    //         margin-bottom:rem(20px) ;
+    //         margin-right: min(rem(20px));
+    //         font-family: 'Roboto';
+    //         font-size: 1rem;
+    //     }
+
+    //     input{
+    //         min-width: rem(260px);
+    //         height: rem(60px);
+    //         padding: rem(0 10px);
+    //     }
+    // }

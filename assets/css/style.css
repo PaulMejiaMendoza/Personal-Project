@@ -289,4 +289,23 @@ body {
     font-family: 'Roboto';
     font-size: 1rem; }
 
+.form {
+  display: block;
+  padding: 1.25rem;
+  height: auto;
+  font-family: 'Roboto';
+  font-size: 1rem; }
+  .form__title {
+    text-align: center;
+    padding-bottom: 2.5rem; }
+  .form__label {
+    margin-right: 0.625rem;
+    margin-left: 0.625rem; }
+  .form__input {
+    width: 12.5rem;
+    height: 3.75rem;
+    margin: 0.625rem; }
+  .form .input--email {
+    width: 15.625rem; }
+
 /*# sourceMappingURL=../../sass/sourcemap/style.css.map */
