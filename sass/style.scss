@@ -10,7 +10,7 @@
 
 //Fonts
 //-------------------------------------
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,700,900&display=swap");
 
 
@@ -24,4 +24,5 @@
 @import "components/navbar/mainnav__ghostitle";
 @import "components/section-input/main";
 @import "components/section-treatments/poptreatments";
+@import "components/footer/footer";
    

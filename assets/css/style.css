@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,700,900&display=swap");
 *, *::before, *::after {
   box-sizing: border-box; }
@@ -164,9 +164,9 @@ body {
 
 .search {
   position: relative;
-  max-height: 24.375rem;
+  height: auto;
   background-color: #d3bbaf;
-  padding: 1.875rem 0; }
+  padding: 1.25rem; }
   .search__title {
     font-family: 'Roboto', 'Open-Sans';
     font-size: 1.5rem;
@@ -211,7 +211,7 @@ body {
         color: #1e2847; }
 
 .poptreatments {
-  max-height: 37.5rem;
+  height: auto;
   padding: 1.25rem 1.25rem;
   font-family: 'Roboto';
   font-size: 20px; }
@@ -221,19 +221,47 @@ body {
     text-align: center;
     line-height: 3.5rem; }
   .poptreatments .grid {
-    width: 100%;
+    height: auto;
+    width: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     background-color: #fff;
     grid-gap: 10px; }
     .poptreatments .grid .item {
       text-align: center;
-      line-height: 10rem;
-      font-size: 2rem;
-      background-color: papayawhip; }
+      font-size: 1rem;
+      font-family: 'Roboto';
+      background-color: #fff;
+      bottom: 0; }
+    .poptreatments .grid--item1 {
+      display: block; }
 
 @media screen and (min-width: 768px) {
   .poptreatments {
     height: 25rem; } }
+
+.footer {
+  height: auto;
+  background-color: #1e2847;
+  padding: 1.25rem; }
+  .footer .support {
+    margin-bottom: 1.25rem; }
+    .footer .support .link {
+      color: #fff;
+      text-decoration: none; }
+    .footer .support .link--opac {
+      color: rgba(255, 255, 255, 0.4); }
+  .footer .discover {
+    margin-bottom: 1.25rem; }
+    .footer .discover .link {
+      color: #fff;
+      text-decoration: none; }
+    .footer .discover .link--opac {
+      color: rgba(255, 255, 255, 0.4); }
+  .footer .copyright {
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Roboto';
+    text-align: center; }
 
 /*# sourceMappingURL=../../sass/sourcemap/style.css.map */
