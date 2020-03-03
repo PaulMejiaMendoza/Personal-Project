@@ -1,9 +1,7 @@
-.form {
-    display: block;
+.form-group{
     padding: rem(20px);
+    font-family: $font-primary;
     height: auto;
-    font-family: 'Roboto';
-    font-size: 1rem;
 
     &__title{
         text-align: center;
@@ -15,51 +13,28 @@
         margin-left: rem(10px)
     }
 
-    &__input {
+    &__control {
+        font-family: $font-primary;
         width: min($numbers: rem(200px));
         height: rem(60px);
         margin: rem(10px);
+        padding: rem(0 10px);
+        border: 2px solid $gray-300;
     }
 
-    .input--email{
+    .input--email, .input--password {
         width: min($numbers: rem(250px));
     }
+
+    &__btn{
+        border: none;
+        background-color: $third;
+        color: $body-bg;
+        font-family: $font-primary;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-base;
+        width: min($numbers: rem(250px));
+        margin: rem(10px);
+        height: rem(60px);
+    }
 }
-
-
-    //     display: inline-block;
-    //     height: auto;
-    //     flex-shrink: 1;
-    //     padding-top: rem(40px);
-
-    //     label, input {
-    //         margin-bottom:rem(20px) ;
-    //         margin-right: min(rem(20px));
-    //         font-family: 'Roboto';
-    //         font-size: 1rem;
-    //     }
-
-    //     input{
-    //         width: auto;
-    //         height: rem(60px);
-    //         padding: rem(0 10px);
-    //     }
-    // }
-
-    // .email{
-    //     display: inline-block;
-    //     height: auto;
-
-    //     label, input {
-    //         margin-bottom:rem(20px) ;
-    //         margin-right: min(rem(20px));
-    //         font-family: 'Roboto';
-    //         font-size: 1rem;
-    //     }
-
-    //     input{
-    //         min-width: rem(260px);
-    //         height: rem(60px);
-    //         padding: rem(0 10px);
-    //     }
-    // }

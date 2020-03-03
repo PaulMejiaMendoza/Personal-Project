@@ -3,20 +3,20 @@
 }
 
 .content{
-    color: #1e2847;
-    background-color: #d3bbaf;
+    color: $primary;
+    background-color: $secondary;
     height: auto;
-    font-family: 'Roboto';
+    font-family: $font-primary;
     padding: rem(20px);
     text-align: center;
 
     &__h1{
-        font-size: 1.5rem;
+        font-size: $font-size-title;
         padding-bottom: 1rem;
     }
     
     &__h2{
-        font-size: 1rem;
+        font-size: $font-size-base;
     }
 }
 
@@ -30,7 +30,7 @@
 
     &__title{
         text-align: center;
-        font-family: 'Roboto';
-        font-size: 1rem;
+        font-family: $font-primary;
+        font-size: $font-size-base;
     }
 }

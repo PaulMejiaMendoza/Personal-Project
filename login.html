@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <nav class="mainnav">
+    <nav class="mainnav mainnav--login">
         <button class="mainnav__ghostitle">M&S</button>
     </nav>
-    <form action="#" class="form">
-        <h1 class="form__title">Antes de adquirir cualquier servicio, necesitamos que completes algunos detalles personales</h1>
-        <label class="form__label label--name" for="name">Nombre</label>
-        <input class="form__input" type="text" id="name">
-        <label class="form__label label--surname" for="surname">Apellidos</label>
-        <input class="form__input" type="text" id="surname"> 
-        <label class="form__label label--email" for="email">Email</label>
-        <input class="form__input input--email" type="email" id="email">
-    </form>
+    <div>
+        <form action="#" class="form-group">
+            <h1 class="form-group__title">Antes de adquirir cualquier servicio, necesitamos que completes algunos detalles personales</h1>
+            <label class="form-group__label" for="name">Nombre</label>
+            <input class="form-group__control" type="text" id="name">
+            <label class="form-group__label" for="surname">Apellidos</label>
+            <input class="form-group__control" type="text" id="surname"> 
+            <label class="form-group__label" for="email">Email</label>
+            <input class="form-group__control input--email" type="email" id="email">
+            <label class="form-group__label" for="password">Contraseña</label>
+            <input class="form-group__control input--password" type="password" id="password">
+            <button class="form-group__btn" type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>

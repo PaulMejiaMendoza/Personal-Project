@@ -3,8 +3,9 @@
 
 
 //Colors-----------
-$primary:   #529b1c;
-$secondary: #37a7e8;
+$primary:   #1e2847;
+$secondary: #d3bbaf;
+$third: #fc4c4F;
 $success:   #66c226;
 $warning:   #f7b500;
 $danger:    #e02020;
@@ -19,8 +20,6 @@ $gray-300: #c7c7cd;
 //------------------------------
 $body-color: #000;
 $body-bg:    #fff;
-
-$link-color:        $secondary;
 $link-decoration:   underline;
 $link-hover:        none;
 
@@ -29,11 +28,11 @@ $paragraph-bottom:  1rem;
 //Font
 //----------------------------------------------------
 $font-primary:            "Roboto";
-$font-secondary:          "Quattrocento";
-$font-family-primary:     $font-primary, Arial, sans-serif;
-$font-family-secondary:   $font-secondary, serif;
+$font-secondary:          "Open Sans";
+$font-family-global:      $font-primary, sans-serif;
 
-$font-size-base:          15px;
+$font-size-title:      1.5rem;
+$font-size-base:         1rem;
 $font-weight-light:       300;
 $font-weight-normal:      400;
 $font-weight-medium:      500;

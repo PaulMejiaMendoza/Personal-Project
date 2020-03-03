@@ -1,62 +1,87 @@
+$icons: (
+  twitter: (
+    "ico": "\f099",
+    "color": #55acee,
+  ),
+  facebook: (
+    "ico": "\f09a",
+    "color": #3b5998,
+  ),
+  instagram: (
+    "ico": "\f16d",
+    "color": #E65C34,
+  ),
+);
+
 .mainnav {
-  height: rem(80px);
-  background-color: #1e2847;
   display: flex;
-  justify-content: center;
+  height: rem(80px);
+  background-color: $primary;
   align-items: center;
 
-  &__links{
-    display: flex;
+  &--login{
+    justify-content: center;
   }
-  
-  
-  &__ghostitle {
-    display: none;
-  }
-
   .social-icons {
-    position: absolute;
-    left: 0;
-    margin-left: 20px;
-  }
-
-}
-
-
-
-@media screen and (max-width: 768px) {
-  .mainnav {
-    justify-items: center;
-
-    &__links{
-      display: none;
-    }
-
-
-    .social-icons {
+    position: relative;
+    margin-left: rem(10px);
+    display: flex;
+    justify-content: center;
+    li + li {
       margin-left: rem(10px);
     }
-
-    &__ghostitle{
-      display: inline-block;
+    
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0;
       
+      &::before {
+        font-family: 'FontAwesome';
+        font-size: 1rem;
+      }
+      @each $social, $icon in $icons {
+        &[href*="#{$social}"] {
+          background-color: map-get($icon, color);
+          &::before {
+            content: map-get($icon, ico)
+          }
+        }
+      }
     }
-    &__title {
-      display: none;
-    }
-
-    .hamburger{
+  }  
+  
+  &__ghostitle {
+    display: inline-block;
+    width: rem(115px);
+    height: rem(20px);
+    border: none;
+    font-family: $font-primary;
+    text-decoration: none;
+    background-color: $primary;
+    color: $body-bg;
+    line-height: 1rem;
+    font-size: 1.5rem;
+    font-weight: $font-weight-bold;
+    cursor: pointer;
+  }
+  .hamburger{
       position: absolute;
       right: rem(20px);
       cursor: pointer;
-     .line {
-      width: rem(30px);
-      height: rem(3px);
-      background-color: white;
-      margin: rem(5px);
-      
-    }
+      .line {
+        width: rem(30px);
+        height: rem(3px);
+        background-color: $body-bg;
+        margin: rem(5px);       
+     }
+
   }
-  }
-  
 }
+

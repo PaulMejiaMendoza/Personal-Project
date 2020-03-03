@@ -52,115 +52,66 @@ body {
   height: 100%; }
 
 .mainnav {
+  display: flex;
   height: 5rem;
   background-color: #1e2847;
-  display: flex;
-  justify-content: center;
   align-items: center; }
-  .mainnav__links {
-    display: flex; }
-  .mainnav__ghostitle {
-    display: none; }
+  .mainnav--login {
+    justify-content: center; }
   .mainnav .social-icons {
-    position: absolute;
-    left: 0;
-    margin-left: 20px; }
-
-@media screen and (max-width: 768px) {
-  .mainnav {
-    justify-items: center; }
-    .mainnav__links {
-      display: none; }
-    .mainnav .social-icons {
-      margin-left: 0.625rem; }
-    .mainnav__ghostitle {
-      display: inline-block; }
-    .mainnav__title {
-      display: none; }
-    .mainnav .hamburger {
-      position: absolute;
-      right: 1.25rem;
-      cursor: pointer; }
-      .mainnav .hamburger .line {
-        width: 1.875rem;
-        height: 0.1875rem;
-        background-color: white;
-        margin: 0.3125rem; } }
-
-.social-icons {
-  display: flex;
-  justify-content: center; }
-  .social-icons li + li {
-    margin-left: 0.3125rem; }
-  .social-icons a {
+    position: relative;
+    margin-left: 0.625rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
+    justify-content: center; }
+    .mainnav .social-icons li + li {
+      margin-left: 0.625rem; }
+    .mainnav .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0; }
+      .mainnav .social-icons a::before {
+        font-family: 'FontAwesome';
+        font-size: 1rem; }
+      .mainnav .social-icons a[href*="twitter"] {
+        background-color: #55acee; }
+        .mainnav .social-icons a[href*="twitter"]::before {
+          content: ""; }
+      .mainnav .social-icons a[href*="facebook"] {
+        background-color: #3b5998; }
+        .mainnav .social-icons a[href*="facebook"]::before {
+          content: ""; }
+      .mainnav .social-icons a[href*="instagram"] {
+        background-color: #E65C34; }
+        .mainnav .social-icons a[href*="instagram"]::before {
+          content: ""; }
+  .mainnav__ghostitle {
+    display: inline-block;
+    width: 7.1875rem;
+    height: 1.25rem;
+    border: none;
+    font-family: "Roboto";
+    text-decoration: none;
+    background-color: #1e2847;
     color: #fff;
-    text-decoration: none;
-    font-size: 0; }
-    .social-icons a::before {
-      font-family: 'FontAwesome';
-      font-size: 1rem; }
-    .social-icons a[href*="twitter"] {
-      background-color: #55acee; }
-      .social-icons a[href*="twitter"]::before {
-        content: ""; }
-    .social-icons a[href*="facebook"] {
-      background-color: #3b5998; }
-      .social-icons a[href*="facebook"]::before {
-        content: ""; }
-    .social-icons a[href*="instagram"] {
-      background-color: #E65C34; }
-      .social-icons a[href*="instagram"]::before {
-        content: ""; }
-
-.mainnav__title {
-  width: 7.1875rem;
-  height: 1.25rem;
-  border: none;
-  font-family: 'Roboto';
-  text-decoration: none;
-  background-color: #1e2847;
-  color: #fff;
-  line-height: 1rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer; }
-
-.mainnav__links {
-  position: absolute;
-  list-style: none;
-  width: 30%;
-  height: 100%;
-  right: 0;
-  margin-right: 3.125rem;
-  align-items: center;
-  justify-content: center; }
-  .mainnav__links li + li {
-    margin-left: 0.625rem; }
-  .mainnav__links li, .mainnav__links a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-size: 1rem; }
-
-.mainnav__ghostitle {
-  width: 7.1875rem;
-  height: 1.25rem;
-  margin-left: 40px;
-  border: none;
-  font-family: 'Roboto';
-  text-decoration: none;
-  background-color: #1e2847;
-  color: #fff;
-  line-height: 1rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer; }
+    line-height: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer; }
+  .mainnav .hamburger {
+    position: absolute;
+    right: 1.25rem;
+    cursor: pointer; }
+    .mainnav .hamburger .line {
+      width: 1.875rem;
+      height: 0.1875rem;
+      background-color: #fff;
+      margin: 0.3125rem; }
 
 .search {
   position: relative;
@@ -168,7 +119,7 @@ body {
   background-color: #d3bbaf;
   padding: 1.25rem; }
   .search__title {
-    font-family: 'Roboto', 'Open-Sans';
+    font-family: "Roboto";
     font-size: 1.5rem;
     padding: 0 1.25rem;
     text-align: center;
@@ -176,14 +127,13 @@ body {
   .search__subtitle {
     padding: 0 1.25rem;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     margin-bottom: 1.875rem; }
   .search .form {
-    display: inline-block;
-    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Roboto'; }
+    justify-content: center;
+    font-family: "Roboto"; }
     .search .form label {
       height: 3.75rem;
       width: 13.4375rem;
@@ -191,8 +141,8 @@ body {
       line-height: 4rem; }
     .search .form input {
       height: 3.75rem;
-      width: 12.8125rem;
-      font-family: 'Roboto';
+      width: 13.625rem;
+      font-family: "Roboto";
       font-size: 1.125rem;
       text-align: center;
       border: 2px solid #fc4c4F;
@@ -203,7 +153,7 @@ body {
       height: 3.75rem;
       background-color: #fc4c4F;
       border: none;
-      font-family: 'Roboto';
+      font-family: "Roboto";
       font-size: 1rem;
       border-radius: 0 3.125rem 3.125rem 0;
       color: #fff; }
@@ -268,7 +218,7 @@ body {
   color: #1e2847;
   background-color: #d3bbaf;
   height: auto;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   padding: 1.25rem;
   text-align: center; }
   .content__h1 {
@@ -286,26 +236,37 @@ body {
   gap: 0.625rem; }
   .services__title {
     text-align: center;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 1rem; }
 
-.form {
-  display: block;
+.form-group {
   padding: 1.25rem;
-  height: auto;
-  font-family: 'Roboto';
-  font-size: 1rem; }
-  .form__title {
+  font-family: "Roboto";
+  height: auto; }
+  .form-group__title {
     text-align: center;
     padding-bottom: 2.5rem; }
-  .form__label {
+  .form-group__label {
     margin-right: 0.625rem;
     margin-left: 0.625rem; }
-  .form__input {
+  .form-group__control {
+    font-family: "Roboto";
     width: 12.5rem;
     height: 3.75rem;
-    margin: 0.625rem; }
-  .form .input--email {
+    margin: 0.625rem;
+    padding: 0 0.625rem;
+    border: 2px solid #c7c7cd; }
+  .form-group .input--email, .form-group .input--password {
     width: 15.625rem; }
+  .form-group__btn {
+    border: none;
+    background-color: #fc4c4F;
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1rem;
+    width: 15.625rem;
+    margin: 0.625rem;
+    height: 3.75rem; }
 
 /*# sourceMappingURL=../../sass/sourcemap/style.css.map */
