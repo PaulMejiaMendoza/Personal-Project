@@ -1,40 +1,49 @@
-.form-group{
+ .form{
     padding: rem(20px);
     font-family: $font-primary;
-    height: auto;
+
+    &--account{
+        padding: rem(20px 0);
+    }
+
+    &--subtitle{
+        font-size: $font-size-subtitle;
+    }
 
     &__title{
         text-align: center;
         padding-bottom: rem(40px);
     }
+    .form-group {
+        display: block;
+        height: auto;
+        text-align: center;
 
-    &__label{
-        margin-right: rem(10px);
-        margin-left: rem(10px)
+        &__control {
+            font-family: $font-primary;
+            width: 100%;
+            height: rem(60px);
+            padding: rem(0 10px);
+            margin-bottom: rem(10px);
+            border: 2px solid $gray-300;
+            font-size: $font-size-base;
+            border-radius: rem(5px);
+        }
+
+
+        &__btn{
+            border: none;
+            background-color: $third;
+            color: $body-bg;
+            font-family: $font-primary;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-base;
+            width: 100%;
+            height: rem(60px);
+            margin-top: rem(20px);
+            cursor: pointer;
+            border-radius: rem(5px);
+        }
     }
 
-    &__control {
-        font-family: $font-primary;
-        width: min($numbers: rem(200px));
-        height: rem(60px);
-        margin: rem(10px);
-        padding: rem(0 10px);
-        border: 2px solid $gray-300;
-    }
-
-    .input--email, .input--password {
-        width: min($numbers: rem(250px));
-    }
-
-    &__btn{
-        border: none;
-        background-color: $third;
-        color: $body-bg;
-        font-family: $font-primary;
-        font-weight: $font-weight-bold;
-        font-size: $font-size-base;
-        width: min($numbers: rem(250px));
-        margin: rem(10px);
-        height: rem(60px);
-    }
-}
+ }

@@ -58,6 +58,8 @@ body {
   align-items: center; }
   .mainnav--login {
     justify-content: center; }
+  .mainnav--account {
+    justify-content: center; }
   .mainnav .social-icons {
     position: relative;
     margin-left: 0.625rem;
@@ -239,34 +241,80 @@ body {
     font-family: "Roboto";
     font-size: 1rem; }
 
-.form-group {
+.form {
   padding: 1.25rem;
-  font-family: "Roboto";
-  height: auto; }
-  .form-group__title {
+  font-family: "Roboto"; }
+  .form--account {
+    padding: 1.25rem 0; }
+  .form--subtitle {
+    font-size: 1.25rem; }
+  .form__title {
     text-align: center;
     padding-bottom: 2.5rem; }
-  .form-group__label {
-    margin-right: 0.625rem;
-    margin-left: 0.625rem; }
-  .form-group__control {
+  .form .form-group {
+    display: block;
+    height: auto;
+    text-align: center; }
+    .form .form-group__control {
+      font-family: "Roboto";
+      width: 100%;
+      height: 3.75rem;
+      padding: 0 0.625rem;
+      margin-bottom: 0.625rem;
+      border: 2px solid #c7c7cd;
+      font-size: 1rem;
+      border-radius: 0.3125rem; }
+    .form .form-group__btn {
+      border: none;
+      background-color: #fc4c4F;
+      color: #fff;
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 1rem;
+      width: 100%;
+      height: 3.75rem;
+      margin-top: 1.25rem;
+      cursor: pointer;
+      border-radius: 0.3125rem; }
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.625rem 1.25rem;
+  max-height: 6.375rem;
+  background-color: #e5e5e8;
+  border-bottom: 1px solid #c7c7cd; }
+  .header a {
+    display: flex;
+    color: #1e2847;
     font-family: "Roboto";
-    width: 12.5rem;
-    height: 3.75rem;
-    margin: 0.625rem;
-    padding: 0 0.625rem;
-    border: 2px solid #c7c7cd; }
-  .form-group .input--email, .form-group .input--password {
-    width: 15.625rem; }
-  .form-group__btn {
-    border: none;
-    background-color: #fc4c4F;
-    color: #fff;
-    font-family: "Roboto";
-    font-weight: 700;
     font-size: 1rem;
-    width: 15.625rem;
-    margin: 0.625rem;
-    height: 3.75rem; }
+    height: 3.125rem;
+    margin-right: 0.625rem;
+    text-decoration: none;
+    align-items: center; }
+    .header a:hover {
+      color: #e5e5e8;
+      background-color: #1e2847; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 1.875rem 1.25rem;
+  font-family: "Roboto"; }
+  .container__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #c7c7cd; }
+    .container__profile img {
+      max-width: 7.5rem; }
+  .container__editProfile__subtitle {
+    text-align: center;
+    font-size: 1.25rem; }
 
 /*# sourceMappingURL=../../sass/sourcemap/style.css.map */
